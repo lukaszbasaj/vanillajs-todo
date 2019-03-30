@@ -4,31 +4,27 @@
 <head>
     <meta charset="UTF-8">
     <title>vanillajs ToDo</title>
-    <link rel="stylesheet" href="dist/bundle.css" type="text/css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="dist/bundle.css">
 </head>
 
 <body>
-    <div class="edit-popup">
-        <input type="text" name="" class="edit-item">
-        <button class="btn-update">Update</button>
-    </div>
     <div class="container">
         <div class="sections">
-            <input type="text" name="" class="item">
-            <button class="btn-add-item">Add</button>
-            <ul>
-                <li><a href="#">All</a></li>
-                <li><a href="#">Today</a></li>
-                <li><a href="#">Tomorrow</a></li>
-            </ul>
+            <input type="text" name="" class="item input-group">
+            <button class="btn btn-outline-primary btn-sm btn-add-item">Add</button>
+            <div class="edit-popup">
+                <input type="text" name="" class="edit-item input-group">
+                <button class="btn btn-outline-info btn-sm btn-update">Update</button>
+            </div>
         </div>
-        <div class="items">
+        <div class="items list-group">
             <ul class="list-items">
-
             </ul>
         </div>
     </div>
-    <script type="text/javascript" src="dist/bundle.js"></script>
+    <script type="text/javascript" src="/dist/bundle.js"></script>
 </body>
 
 </html>
